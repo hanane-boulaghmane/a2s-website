@@ -1,0 +1,14 @@
+#why{ background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.why-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+@media (max-width:860px){ .why-grid{grid-template-columns:1fr;} }
+.why-card{
+  border:1px solid var(--line); border-radius:var(--radius); padding:32px;
+  background:linear-gradient(160deg, var(--surface), transparent);
+}
+.why-card .ic{
+  width:44px; height:44px; border-radius:10px; background:var(--signal-dim);
+  display:flex; align-items:center; justify-content:center; margin-bottom:20px;
+  color:var(--signal); font-size:20px;
+}
+.why-card h3{font-size:18px; margin-bottom:10px;}
+.why-card p{color:var(--muted); font-size:14.5px;}

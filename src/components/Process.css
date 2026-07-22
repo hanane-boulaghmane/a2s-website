@@ -1,0 +1,16 @@
+#process{ background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.process{ display:grid; grid-template-columns:repeat(4,1fr); gap:0; position:relative; }
+@media (max-width:860px){ .process{grid-template-columns:1fr; gap:30px;} }
+.process-step{ position:relative; padding:0 20px 0 0; }
+.process-step .idx{
+  font-family:var(--font-mono); font-size:13px; color:var(--signal);
+  border:1px solid var(--signal); width:34px; height:34px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center; margin-bottom:20px;
+}
+.process-step h3{font-size:17px; margin-bottom:8px;}
+.process-step p{color:var(--muted); font-size:14px;}
+.process-line{
+  position:absolute; top:17px; left:34px; right:-20px; height:1px;
+  background:repeating-linear-gradient(90deg, var(--line) 0 6px, transparent 6px 12px);
+}
+@media (max-width:860px){ .process-line{display:none;} }
